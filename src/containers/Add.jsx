@@ -55,7 +55,7 @@ export default class AddContainer extends Component {
         author: author.value,
         // Random values for simplicity
         views: Math.floor(Math.random() * 100000) + 1,
-        uploadAt: Math.floor(Math.random() * 24) + 1,
+        uploadAt: Math.floor(Math.random() * 23) + 1,
         uuid,
         converted: false,
       }),

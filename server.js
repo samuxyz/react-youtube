@@ -44,12 +44,12 @@ app.route('/convert')
   .post((req, res) => {
     const { status, uuid, data: { url } } = req.body;
     // Once the transcoding is completed then show the video
-    if (status && status === 'completed') {
+    if (status && status === 'completed') { // status should be 'completed'
       db.forEach(video => {
         // Search for the video to update the URL and make it visible to users
         if (video.uuid === uuid) {
-          video.url = url;
-          video.converted = true;
+          video.url = url; // Update the URL
+          video.converted = true; // Make the video visible to users
         }
       });
     }
