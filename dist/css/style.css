@@ -1,0 +1,53 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background-color: #F1F1F1;
+}
+
+.navbar-default {
+  background-color: white;
+}
+
+.navbar-form {
+  width: 50%;
+}
+.navbar-form #search-bar {
+  width: 100%;
+}
+
+#container {
+  margin-top: 20px;
+  background-color: white;
+}
+
+.video-info h4 {
+  margin-bottom: 5px;
+}
+
+.video-info p {
+  margin: 0;
+}
+
+.footer {
+  width: 100%;
+  height: 40px;
+  background-color: white;
+}
+
+.off {
+	display:none;
+}
+.on {
+	display:block;
+}
+.btn-filestack {
+	background-color: #EE4632;
+	border-color: #EE4632;
+}
+.btn-filestack, .btn-filestack:hover {
+	color: #FFF;
+}
+.btn-filestack:hover {
+	background-color: #db2812;
+}
