@@ -3,6 +3,7 @@ import { hashHistory } from 'react-router';
 import { API, API_KEY } from '../config';
 import { Footer } from 'components';
 
+// Filestack URLs
 const filestackCDN = 'https://cdn.filestackcontent.com';
 const filestackAPI = 'https://process.filestackapi.com';
 
@@ -108,7 +109,7 @@ export default class AddContainer extends Component {
                   />
                 </div>
                 <div className="form-group">
-                  <label htmlFor="picture">Photo</label>
+                  <label htmlFor="video">Video</label>
                   { // When the URL is returned we show the preview
                     url &&
                       <div className="embed-responsive embed-responsive-16by9">
