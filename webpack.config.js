@@ -8,9 +8,7 @@ const getDevConfig  = require('./webpack.config.dev');
 
 
 const common = {
-  entry: {
-    app: paths.src
-  },
+  entry: ['babel-polyfill', paths.src],
   resolve: {
     alias: {
       components:  paths.components,

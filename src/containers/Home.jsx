@@ -10,11 +10,15 @@ export default class Home extends Component {
     this.state = { videosList: [] };
   }
 
-  componentDidMount () {
+  async componentDidMount () {
     // Calls GET /api/v1/videos to populate videosList
-    return fetch(API)
-      .then(response => response.json())
-      .then(videosList => this.setState({ videosList }));
+    try {
+      const response = await fetch(API);
+      const videosList = await response.json();
+      this.setState({ videosList });
+    } catch (e) {
+      console.log(e);
+    }
   }
 
   render () {
